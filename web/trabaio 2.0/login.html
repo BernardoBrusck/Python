@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>login</title>
+
+        <style>
+            *{
+                margin: 0;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #4b6bbf;
+                user-select: none;
+            }
+            header{
+                background: white;
+                height: 100px;
+                width: 1920px;
+                margin: 0 0 150px 0;
+            }
+            main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: white;
+                border-radius: 15px;
+                font-family: monospace;
+                margin: 0;
+            }
+            img{
+                padding: 20px 0 18px 0;
+                width: 120px;
+                transition: width 0.2s;
+            }
+            img:hover{
+                width: 150px;
+            }
+            input{
+                padding: 5px 10px 5px 10px;
+                margin: 2px;
+                background: #dbdbdb;
+                border: 2px solid #dbdbdb;
+                border-radius: 10px;
+                font-size: 25px;
+                outline: none;
+                text-align: center;
+                width: 200px;
+                height: 25px;
+                font-family: monospace;
+                transition: border 0.2s, border-radius 0.2s, background 0.2s, width 0.2s, height 0.2s, color 0.2s;
+            }
+            input:hover{
+                border: 2px solid #4b6bbf;
+            }
+            input:focus{
+                background: #4b6bbf;
+                border: 2px solid #4b6bbf;
+                width: 250px;
+                height: 30px;
+                color: white;
+            }
+            input::placeholder{
+                font-size: 20px;
+                transition: color 0.2s;
+            }
+            input:focus::placeholder{
+                color: #234cb4;
+            }
+            .entrar{
+                margin: 13px 0 15px 0;
+                border: 1px solid #cccccc;
+                border-radius: 0%;
+                font-size: 24px;
+                text-align: center;
+                width: 290px;   
+                height: 60px;
+                font-family: monospace;
+                transition: background 0.2s, color 0.2s, height 0.2s, font-size 0.2s, border 0.2s;
+            }
+            .entrar:hover{
+                background: #4b6bbf;
+                color: white;
+                height: 70px;
+                font-size: 30px;
+                border: 1px solid #4b6bbf;
+            }
+            .cadastro{
+                margin: 13px 0 15px 0;
+                border: none;
+                font-size: 24px;
+                text-align: center;
+                width: 290px;   
+                height: 50px;
+                font-family: monospace;
+                border-radius: 30px;
+                transition: height 0.2s, font-size 0.2s;
+            }
+            .cadastro:hover{
+                height: 70px;
+                font-size: 30px;
+            }
+            h2{
+                color: red;
+                padding: 12px 0 0 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://cdn.discordapp.com/attachments/977933870467018792/988278777954070598/unknown.png"></a>
+            <input type="text" placeholder="login">
+            <input type="password" placeholder="senha">
+            <h2></h2>
+            <button class="entrar">Entrar</button>
+        </main>
+        <a href="http://127.0.0.1:5000/cadastro"><button class="cadastro">Cadastro</button></a>
+    </body>
+</html>
